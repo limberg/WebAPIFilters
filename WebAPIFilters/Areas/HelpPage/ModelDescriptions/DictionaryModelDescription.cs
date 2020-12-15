@@ -1,0 +1,6 @@
+namespace WebAPIFilters.Areas.HelpPage.ModelDescriptions
+{
+    public class DictionaryModelDescription : KeyValuePairModelDescription
+    {
+    }
+}
