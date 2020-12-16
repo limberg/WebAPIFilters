@@ -71,7 +71,7 @@ namespace WebAPIFilters.Controllers
             throw new EndOfWorldEception();
         }
 
-        [MyExceptionFilter2]
+        //[MyExceptionFilter2]
         [Route("api/ef/get2")]
         public string Get2()
         {

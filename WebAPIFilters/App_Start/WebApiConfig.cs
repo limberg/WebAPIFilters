@@ -15,6 +15,7 @@ namespace WebAPIFilters
 
             config.Filters.Add(new MyExceptionFilter2());
 
+            //config.Filters.Add(new CustomExceptionsFilter.CustomExceptionFilter());
             // Web API routes
             config.MapHttpAttributeRoutes();
 
