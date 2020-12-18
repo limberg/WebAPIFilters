@@ -165,7 +165,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="LoginBasicAuthentication\LoginSecurity.cs" />
+    <Compile Include="BasicAuthentication\LoginSecurity.cs" />
+    <Compile Include="MessageHandlersAuthentication\APIKeyMessageHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

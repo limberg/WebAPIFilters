@@ -6,6 +6,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using WebAPIFilters.MessageHandlersAuthentication;
 
 namespace WebAPIFilters
 {
@@ -18,6 +19,9 @@ namespace WebAPIFilters
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            //Message Handler -> Header für die ganze web API 
+            //GlobalConfiguration.Configuration.MessageHandlers.Add(new APIKeyMessageHandler());
         }
     }
 }

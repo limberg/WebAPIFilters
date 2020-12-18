@@ -32,9 +32,10 @@ namespace WebAPIFilters.BasicAuthentication
                 string username = usernamePasswordArray[0];
                 string password = usernamePasswordArray[1];
 
-                if (LoginBasicAuthentication.LoginSecurity.Login(username, password))
+                if (BasicAuthentication.LoginSecurity.Login(username, password))
                 {
                     //Authorized
+
                     // esto es solo para guardar el username
                     Thread.CurrentPrincipal = new GenericPrincipal(new GenericIdentity(username), null);
                 }
